@@ -1,0 +1,22 @@
+[project]
+name = "dzongkha-autocorrect"
+version = "0.1.0"
+description = "Human-in-the-loop, layered spell/grammar correction for Dzongkha (Tibetan-script)."
+authors = [
+    { name = "Ngawang Tenzin", email = "coder.cbms@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = []
+
+[project.optional-dependencies]
+botok = ["botok>=0.9"]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[project.scripts]
+dza-review = "dzongkha_autocorrect.cli.reviewer:main"
+
+[build-system]
+requires = ["uv_build>=0.11.6,<0.12.0"]
+build-backend = "uv_build"
