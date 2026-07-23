@@ -9,7 +9,9 @@ requires-python = ">=3.13"
 dependencies = []
 
 [project.optional-dependencies]
-botok = ["botok>=0.9"]
+botok = [
+    "botok>=0.9",
+]
 
 [dependency-groups]
 dev = ["pytest>=8"]
