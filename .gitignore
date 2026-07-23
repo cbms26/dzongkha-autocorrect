@@ -8,5 +8,6 @@ build/
 
 # runtime data
 data/*.db
+data/*.txt
 data/*.db-journal
 
